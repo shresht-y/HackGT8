@@ -183,7 +183,7 @@ window.onload = function() {
     if (this.readyState == 4 && this.status == 200) {
       var ride = JSON.parse(this.responseText);
       console.log(ride);
-      recieveSearches(ride);
+      receiveSearches(ride);
     }
     
   };
