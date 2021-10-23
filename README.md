@@ -1,5 +1,5 @@
 This is our HACKGT Project
 
 Yash Gupta
-Shresh Yadav
+Shreshta Yadav
 Samarth Kumat
