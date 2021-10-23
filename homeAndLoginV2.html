@@ -248,6 +248,10 @@ document.getElementById("loginButton").onclick = function() {
   request1.send(JSON.stringify({
     email: email, password: password
 	}));
+  request1.onreadystatechange = function() {
+    if (request1.readyState === 4) {
+        window.location.href = JSON.parse(request1.response).redirect_url
+    }
 
 };
   
