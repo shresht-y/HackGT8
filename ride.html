@@ -114,12 +114,12 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
+  from {-webkit-transform: scale(0)}
   to {-webkit-transform: scale(1)}
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
+  from {transform: scale(0)}
   to {transform: scale(1)}
 }
 
@@ -188,15 +188,13 @@ document.getElementById("acceptRide").onclick = function() {
   var request1 = new XMLHttpRequest();
   request1.open("POST", "accept_ride", true);
   request1.setRequestHeader('Content-Type', 'application/json');
-  var location = location.href;
-  location = location.split("=");
-  ride_id = location[1];
+  let ride_id = location.href.split("=")[1];
   request1.send(JSON.stringify({
     id: ride_id
 	}));
   request1.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      location.href = "riders";
+      location.href = "rider_rides";
     }
   }
 }
