@@ -270,12 +270,14 @@ window.onclick = function(event) {
 window.onload = function() {
     var request1 = new XMLHttpRequest();
     request1.open("FETCH", "rider_rides", true);
+    request1.send();
     request1.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var ride = JSON.parse(this.responseText);
       console.log(ride);
       recieveSearches(ride);
     }
+    
   };
 };
 
