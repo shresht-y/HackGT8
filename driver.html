@@ -210,7 +210,7 @@ function receiveSearches(myArr) {
                 <p>People: ${myArr[i].amount_of_people}</p>
                 <p>Starting Location: ${myArr[i].startingLocation}</p>
                 <p>Price: ${myArr[i].price}</p>
-                <p style="text-transform: uppercase;">Status: ${return (myArr[i].accepted ? 'Accepted' : 'Pending')}</p>
+                <p style="text-transform: uppercase;">Status: ${(myArr[i].accepted ? 'Accepted' : 'Pending')}</p>
                 <button id="getCarpoolDetails" type="Submit">More Details</button>
             </div>
             </div>
