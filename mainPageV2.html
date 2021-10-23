@@ -135,6 +135,41 @@ span.psw {
 }
 </style>
 <body>
+	<div id="id01" class="modal">
+  
+  <div class="modal-content animate"> 
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Event Name</b></label>
+      <input id="eventNameBox" type="text" placeholder="Enter Event Name" name="uname" required>
+
+      <label for="psw"><b>Starting Location</b></label>
+      <input id="startingLocationBox" type="text" placeholder="Enter your starting location" name="psw" required>
+      
+      <label for="psw"><b>Price</b></label>
+      <input id="priceBox" type="text" placeholder="Enter your price" name="psw" required>
+      
+      <label for="psw"><b>Amount of people</b></label>
+      <input id="amountOfPeopleBox" type="text" placeholder="Enter the amount of people you can take" name="psw" required>
+        
+      <button id="submitNewCarpool" type="Submit">Submit</button>
+      
+      <label>
+        
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </div>
+  
+</div>
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
